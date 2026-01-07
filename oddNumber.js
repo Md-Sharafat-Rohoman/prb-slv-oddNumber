@@ -9,7 +9,10 @@ function oddNumber(numbers) {
             sum = sum + number;
         }
     }
-    return sum;
+
+    const oddLength = oddnum.length;
+    const oddAvarage = sum / oddLength
+    return oddAvarage;
 }
 const num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 console.log(oddNumber(num));
