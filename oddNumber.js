@@ -1,12 +1,15 @@
-function oddNumber(numbers){
+function oddNumber(numbers) {
     let oddnum = [];
-    for(let number of numbers){
+    let sum = 0;
+    for (let number of numbers) {
         // console.log(number);
-        if(number % 2 === 1){
+        
+        if (number % 2 === 1) {
             oddnum.push(number);
+            sum = sum + number;
         }
     }
-    return oddnum;
+    return sum;
 }
-const num = [1,2,3,4,5,6,7,8,9]
+const num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 console.log(oddNumber(num));
